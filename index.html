@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando Grid</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- div padre contendedor del grrid -->
+    <div class="grid-contenedor">
+        <!-- contenedor del header  -->
+        <header class="grid-header">
+            <div class="logo"><a href="#home"><img src="img/logo.png" alt="logo"></a></div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="#canchas">Canchas</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- contenedor del header  -->
+
+        <!-- contenedor del main  -->
+        <main class="grid-main">
+            <section class="inicio">
+                <h1 class="inicio-titulo" id="home">Las mejores Canchas de cesped sintetico</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita alias consequuntur ullam at, voluptatem minus aliquid qui sit, impedit ea enim. Voluptatibus tempore hic excepturi ea, officia incidunt obcaecati? Et autem accusantium omnis, fugiat a id ab dolor facilis tenetur ipsam hic officia, qui necessitatibus voluptas maxime. Nobis, in nostrum.
+                </p>
+
+            </section>
+                <!-- canchas -->
+
+            <section class="canchas" id="canchas">
+
+                <div class="cancha">
+                    <img src="img/Cancha.jpg" alt="cancha">
+                    <h3>Cancha 1</h3>
+                </div>
+
+                <div class="cancha">
+                    <img src="img/Cancha.jpg" alt="cancha">
+                    <h3>Cancha 2</h3>
+                </div>
+
+                <div class="cancha">
+                    <img src="img/Cancha.jpg" alt="cancha">
+                    <h3>Cancha 3</h3>
+                </div>
+
+                <div class="cancha">
+                    <img src="img/Cancha.jpg" alt="cancha">
+                    <h3>Cancha 4</h3>
+                </div>
+
+            </section>
+                <!-- canchas -->
+
+            <!-- precios -->
+            <section class="precios" id="precios">
+
+                <div class="precio-promo">
+                    <h3>Promo 1</h3>
+                    <h2>$1500</h2>
+                    <p>de Lunes a Jueves</p>
+                </div>
+
+                <div class="precio-promo">
+                    <h3>Promo 2</h3>
+                    <h2>$2200</h2>
+                    <p>de Viernes a Domingo</p>
+                </div>
+
+                <div class="precio-promo">
+                    <h3>Toneos</h3>
+                    <h2>$3000</h2>
+                    <p>Por Equipo</p>
+                </div>
+
+            </section>
+            <!-- precios -->
+
+
+            <!-- contacto -->
+            
+            <section class="contacto" id="contacto">
+                <h3>Contacto  - consulta</h3>
+                <form action="" class="formulario">
+
+                    <div class="form-inputs">
+
+                        <input type="text" name="reservado" id="reservado" placeholder="Nombre de la Reserva">
+                    </div>
+
+                    <div class="form-inputs">
+                        <label for="nivel">Elija la cancha</label>
+                        <select name="nivel" id="nivel">
+                            <option value="">...</option>
+                            <option value="1">Cancha 1</option>
+                            <option value="2">Cancha 2</option>
+                            <option value="3">Cancha 3</option>
+                            <option value="4">Cancha 4</option>
+                        </select>
+                    </div>                   
+
+                    <div class="form-inputs">
+
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-inputs">
+
+                        <input type="tel" name="tel" id="tel" placeholder="Numero de contacto">
+                    </div>
+                    
+                    <div class="form-inputs">
+                        <input type="submit" value="Enviar Consulta">
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- contacto -->
+
+            <!-- publicidad -->
+            <aside class="publicidad">
+               <div class="img-publicidad">
+                   <img src="img/messi2.jpg" alt="">
+               </div> 
+            </aside>
+            <!-- publicidad -->
+
+
+        </main>
+        <!-- contenedor del main  -->
+
+
+        <!-- contenedor del footer  -->
+        <footer class="grid-footer">
+            <div class="logo-footer">
+                <a href="#home"><img src="img/logo.png" alt="logo"></a>
+            </div>
+
+
+            <p class="credito">Pagina creada por Brian Alan Atue </p>
+
+        </footer>
+        <!-- contenedor del footer  -->
+
+    </div>
+</body>
+</html>

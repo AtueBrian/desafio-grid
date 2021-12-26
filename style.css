@@ -1,0 +1,221 @@
+/* ------ global ------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{font-size: 62.5%;} 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/* ------ global ------- */
+
+/*? ------ grid --------- */
+
+.grid-contenedor{
+  display: grid;
+  grid-template-areas: 
+  "cabecera cabecera cabecera cabecera"
+  "principal principal principal publicidad" 
+  "principal principal principal publicidad"
+  "pie pie pie pie"   
+  ;
+
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  /* grid-row-gap: 10px;
+  grid-column-gap: 20px; */
+  height: 100vh;
+}
+
+/*? ------ grid --------- */
+
+
+/* ------ Header ------- */
+.grid-header{
+  grid-area: cabecera;
+}
+.grid-header img{
+    width: 40rem;
+}
+.grid-header{
+  background-color: #724c9f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-header ul{
+  display: flex;
+  padding: 2rem;
+
+}
+.grid-header ul li{
+  margin: 2rem;
+}
+
+
+.grid-header li a{
+  color: white;
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
+
+}
+.grid-header li a:hover{
+  background-color: #9d85bb;
+  transition: 1s;
+}
+
+
+/* ------ Header ------- */
+
+/* ------ Main ---------- */
+
+.grid-main{
+  grid-area: principal;
+}
+
+.inicio .inicio-titulo{
+  text-align: center;
+  font-size: 4rem;
+}
+.inicio p{
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+/*------- precios ----------*/
+.precios{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.precios .precio-promo{
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 3rem;
+}
+
+/* ------ Contacto -------- */
+
+.contacto{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+
+  background-color: #9d85bb;
+  width: 50%;
+}
+.contacto h3 {
+  font-size: 2rem;
+}
+.contacto .formulario{
+  display: block;
+}
+.formulario .form-inputs{
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+
+/* canchas */
+
+.canchas{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.canchas img{
+  width: 60rem;
+}
+.canchas h3{
+  font-size: 2rem;
+}
+.canchas .cancha{
+  margin: 3rem;
+  border: 2px solid #724c9f;
+  padding: 2rem;
+}
+
+
+
+/* ------ Main ---------- */
+
+/* ------ aside --------- */
+
+
+.publicidad{
+  margin: 2rem;
+  grid-area: publicidad;
+}
+
+.publicidad .img{
+  width: 100rem;
+
+}
+
+/* ------ aside ----------*/
+
+/* ------ footer ----------*/
+.grid-footer{
+  background-color: #724c9f;
+  grid-area: pie;
+}
+
+.logo-footer{
+  margin: 2rem;
+
+}
+.logo-footer img{
+  width: 25rem;
+}
+
+.credito{
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+
+/* ------ footer ----------*/
+
+/* -------------- MEDIAS QUERYS ------------- */
+
+
+@media screen and (max-width: 640px) {
+    body {
+      background: blue;
+    }
+
+  }
+  
+  @media screen and (min-width: 641px) and (max-width: 1279px){
+    body {
+      background: red;
+    }
+  }
+  
+  /* @media screen and (min-width: 1280px) {
+    body {
+      background: green;
+    }
+  } */
